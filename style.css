@@ -1,0 +1,127 @@
+@charset "UTF-8";
+
+@font-face {
+    font-family: 'Android';
+    src: url(fontes/idroid.otf) format('opentype');
+    font-weight: normal;
+}
+
+@import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Playpen+Sans:wght@100..800&display=swap');
+
+
+:root{
+    --cor0: #ebe5c5;
+    --cor1: #83e1ad;
+    --cor2: #3ddc84;
+    --cor3: #2fa866;
+    --cor4: #1a5c37;
+    --cor5: #063d1e;
+
+    --fontPadrao: Arial, Verdana, Helvetica, sans-serif;
+    --fontDestaque: 'Bebas Neue', cursive;
+    --fontAndroid:'Android', cursive;
+}
+
+*{
+    margin: 0;
+    padding: 0;
+}
+
+body{
+    background-color: var(--cor0);
+     font-family: var(--fontPadrao);
+}
+
+header{
+    background: linear-gradient(var(--cor3), var(--cor5));
+    text-align: center;
+    padding:40px 10px 0 0; 
+    min-height: 200px;
+    color: white;  
+}
+
+
+header > h1{
+    font-family: var(--fontDestaque);
+    padding: 10px;
+    font-size: 2.8em;
+    max-width: 600px;
+    margin: auto;
+    text-shadow: 1px 1px 3px rgba(0, 0, 0, 0.333);
+}
+
+header p{
+    margin: 10px 0 0;
+    font-size: 2em;
+}
+
+nav{
+    background-color: var(--cor5);
+    box-shadow: 0px 3px 5px rgba(0, 0, 0, 0.391);
+}
+
+nav > a{
+    color: white;
+    margin: 0 10px;
+    padding: 10px;
+    display: inline-block;
+    text-decoration: none;
+}
+
+a:hover{
+    text-decoration: underline;
+    color: var(--cor5);
+    background-color: var(--cor3);
+    border-radius: 10%;
+}
+
+img{
+    width: 100%;
+}
+
+main{
+    background-color: white;
+    padding: 15px;
+    text-align: justify;
+    max-width: 800px;
+    min-width: 320px;
+    margin: auto;
+
+}
+
+main h1, main h2{
+    font-family: var(--fontAndroid);
+    margin: 10px;
+}
+
+main p{
+    margin: 10px;
+}
+
+.pequeno{
+    display: block;
+    margin: auto;
+    width: 50%;
+}
+
+aside{
+    margin: 10px 10px;
+    background-color: var(--cor1);
+    border-radius: 10px;
+    padding: 15px;
+}
+
+aside p{
+    padding: 5px;
+}
+
+aside ul{
+    margin: 0 40px;
+}
+
+footer{
+    background-color: var(--cor5);
+    color: white;
+    text-align: center;
+    padding: 10px;
+}

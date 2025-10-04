@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+<script>
+function tentarSair() {
+  Swal.fire({
+    title: "Tem certeza?",
+    text: "Você perderá os dados não salvos!",
+    icon: "warning",
+    showCancelButton: true,
+    confirmButtonText: "Sim, sair",
+    cancelButtonText: "Cancelar"
+  }).then((result) => {
+    if (result.isConfirmed) {
+      // aqui você faria o "sair"
+      console.log("Usuário aceitou");
+    } else {
+      console.log("Usuário cancelou");
+    }
+  });
+}
+</script>
+
+<button onclick="tentarSair()">Testar saída</button>
+</body>
+</html>
